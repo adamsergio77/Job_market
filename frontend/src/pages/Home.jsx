@@ -6,14 +6,8 @@ import AllOffers from "./AllOffers.jsx";
 function  Home() {
      return (
          <>
-         <div style={{backgroundColor: 'lightgray'}}>
-            <div style={{height: '50px'}}>
-                <BasePage />
-            </div>
-             <div>
-                 <AllOffers />
-             </div>
-         </div>
+             <BasePage />
+             <AllOffers />
          </>
      )
 }

@@ -1,13 +1,8 @@
-.flex-container {
+.grid-container-offer {
     display: grid;
-    width: 100%;
     height: 100%;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
+    padding: 50px 100px 0 100px;
 
-}
-.offer-window {
-    border: 1px solid black;
-    height: auto;
-    text-wrap: wrap;
 }

@@ -3,6 +3,7 @@ import api from '../api'
 import Offer from "../components/Offer";
 import BasePage from "./BasePage.jsx";
 import {useNavigate} from "react-router-dom";
+import "../styles/AllOffers.css"
 
 function MyOffers () {
     const [offers, setOffers] = useState([])
@@ -43,10 +44,11 @@ function MyOffers () {
     return (
         <>
             <BasePage />
-            <div>
-                Notes21
+            <div className="grid-container-offer">
                 {offers.map((offer) => (
-                    <Offer offer={offer} onDelete={deleteOffer} isOwner={isOwner} key={offer.id} />
+                    <div className="offer-window">
+                        <Offer offer={offer} onDelete={deleteOffer} isOwner={isOwner} key={offer.id} />
+                    </div>
                 ))}
             </div>
             <br />

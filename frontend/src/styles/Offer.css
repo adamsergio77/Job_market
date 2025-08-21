@@ -1,7 +1,45 @@
 .offer-box {
-    height: auto;
+    gap: 20px;
+    text-align: left;
+    border: 1px solid #888888;
+    border-radius: 2%;
+    padding: 10px 30px;
+    text-wrap: wrap;
+    color: #888888;
+    background-color: #022030;
+    position: relative;
+    height: 100%;
+    justify-content: center;
 }
 
 p {
     word-break: break-word;
+}
+
+.offer-title {
+    font-size: 12pt;
+    color: wheat;
+}
+
+.offer-content {
+    font-size: 9pt;
+
+}
+.offer-date {
+    font-size: 7pt;
+}
+
+.offer-category {
+    font-size: 9pt;
+}
+
+.buttons-area {
+    display: flex;
+    width: 100%;
+    padding: 0;
+    height: auto;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    justify-content: center;
 }

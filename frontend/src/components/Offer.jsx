@@ -8,13 +8,15 @@ function Offer({ offer, onDelete, isOwner}) {
 
     return (
         <div className="offer-box">
-            <p className="note-title">{offer.title}</p>
-            <p className="note-content">{offer.content}</p>
-            <p>{offer.category}</p>
-            <p>{offer.author}</p>
-            <p className="note-date">{formattedDate}</p>
+            <p className="offer-date">Dodano {formattedDate}</p>
+            <p className="offer-title">{offer.title}</p>
+            <p className="offer-category">Kategoria {offer.category}</p>
+            <p className="offer-content">
+                Opis: <br />
+                {offer.content}
+            </p>
             {isOwner &&
-            <div>
+            <div className="buttons-area">
                 <button onClick={() => onDelete(offer.id)}>Delete</button>
                 <button onClick={() => setIsOpenModal(true)}>Edit</button>
                 {isOpenModal && <ModalEdit offerId={offer.id} closeModal={setIsOpenModal} />}

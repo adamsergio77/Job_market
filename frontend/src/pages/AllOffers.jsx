@@ -24,11 +24,9 @@ function AllOffers () {
 
     return (
         <>
-            <div className="flex-container">
+            <div className="grid-container-offer">
                 {offers.map((offer) => (
-                    <div className="offer-window">
-                        <Offer offer={offer} isOwner={isOwner} key={offer.id}/>
-                    </div>
+                    <Offer offer={offer} isOwner={isOwner} key={offer.id}/>
                 ))}
             </div>
         </>
