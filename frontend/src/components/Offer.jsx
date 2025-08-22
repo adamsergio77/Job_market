@@ -17,8 +17,11 @@ function Offer({ offer, onDelete, isOwner}) {
             </p>
             {isOwner &&
             <div className="buttons-area">
-                <button onClick={() => onDelete(offer.id)}>Delete</button>
-                <button onClick={() => setIsOpenModal(true)}>Edit</button>
+
+                <img src='src/assets/bin-logo.png' height='30px' width='30px' title="Usuń" onClick={() => onDelete(offer.id)}></img>
+
+                <img src='src/assets/edit-logo.png' height='30px' width='30px' title="Edytuj" onClick={() => setIsOpenModal(true)}></img>
+
                 {isOpenModal && <ModalEdit offerId={offer.id} closeModal={setIsOpenModal} />}
             </div>
             }
